@@ -1,8 +1,16 @@
 package com.gmall.gmall.user.bean;
 
+import org.springframework.data.annotation.Id;
+
+import javax.annotation.Generated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import java.util.Date;
 
+
 public class UmsMember {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private Long memberLevelId;
